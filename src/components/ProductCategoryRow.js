@@ -8,7 +8,7 @@ class ProductCategoryRow extends React.Component {
         return (
             <div>
                 <tr>
-                    <td>{this.props.category}</td>
+                    <td style={{ fontWeight: "bold" }}>{this.props.category}</td>
                 </tr>
             </div>
         );
