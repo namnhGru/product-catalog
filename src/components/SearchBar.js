@@ -7,6 +7,7 @@ class SearchBar extends React.Component {
     }
 
     handleTextChange(e) {
+        console.log(e.target.value)
         this.props.handleFilteredTextChange(e.target.value)
     }
 
@@ -18,7 +19,7 @@ class SearchBar extends React.Component {
         return (
             <div>
                 <input type="text" value={this.props.filteredText} onChange={this.handleTextChange} />
-                <input type="checkbox" value={this.props.onlyInStock} onChange={this.handleOnlyInStockChange}/>
+                <input type="checkbox" checked={this.props.onlyInStock} onChange={this.handleCheckboxChange}/>
             </div>
         );
     }
