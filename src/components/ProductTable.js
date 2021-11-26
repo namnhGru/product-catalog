@@ -15,7 +15,7 @@ class ProductTable extends React.Component {
                                 ? products.filter(product => product.name.includes(this.props.filteredText))
                                 : products
         let afterStockFilter = this.props.onlyInStock
-                                ? afterTextFilter.filter(product => product.stock === true)
+                                ? afterTextFilter.filter(product => product.stocked === true)
                                 : afterTextFilter 
         return afterStockFilter
     }
